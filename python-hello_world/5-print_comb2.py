@@ -2,6 +2,6 @@
 
 for number in range(100):
     if number != 99:
-        print(number, end=", ")
+        print("{}, " .format(number), end="")
     else: 
         print(number)
