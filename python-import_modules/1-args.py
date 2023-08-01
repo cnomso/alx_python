@@ -27,7 +27,7 @@ def main():
     arguments = sys.argv[1:]
     num_arguments = len(arguments)
 
-    print("argument(s): {}" .format(num_arguments), end="")
+    print("{} argument:" .format(num_arguments), end="")
     if num_arguments == 0:
         print(".")
     else:
