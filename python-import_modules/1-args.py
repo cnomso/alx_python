@@ -31,10 +31,9 @@ def main():
     if num_arguments == 0:
         print(".")
     else:
-        print("\n")
-
+        print(end="\n")
         for i, arg in enumerate(arguments, 1):
-            print(f"{i}: {arg}")
+            print("{}: {}".format(i, arg))
 
 if __name__ == "__main__":
     main()
