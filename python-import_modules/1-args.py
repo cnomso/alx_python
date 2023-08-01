@@ -26,8 +26,10 @@ import sys
 def main():
     arguments = sys.argv[1:]
     num_arguments = len(arguments)
-
-    print("{} argument:" .format(num_arguments), end="")
+    if num_arguments < 2:
+        print("{} argument:" .format(num_arguments), end="")
+    else:
+        print("{} arguments:" .format(num_arguments), end="")
     if num_arguments == 0:
         print(".")
     else:
