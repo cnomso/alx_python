@@ -15,3 +15,6 @@ try:
 except Exception as e:
     print(e)
 
+print(__import__("0-square").__doc__)
+print(__import__("0-square").Square.__doc__)
+# print(__import__("my_module").__init__.__doc__)
