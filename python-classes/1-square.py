@@ -7,3 +7,12 @@ class Square():
     '''
     def __init__(self, size):
         self._Square__size = size 
+        
+
+    def __dict__(self, size):
+        self._Square__size = size 
+        if type(self.size) is not int:
+            raise TypeError('size must be an integer')
+        elif self.size < 0:
+            raise ValueError('size must be >= 0')
+            
