@@ -1,4 +1,5 @@
-'''' BaseGeometry class
+'''' 
+BaseGeometry class
 '''
 
 class BaseGeometry:
