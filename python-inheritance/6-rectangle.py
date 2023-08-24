@@ -27,6 +27,10 @@ class Rectangle(BaseGeometry):
         self.height = height
 
     def integer_validator(self, width, height):
+
+        '''' rectangle class
+        raise exceptions
+        '''
         # self.name = name
         # self.value = value
         self.width = width
