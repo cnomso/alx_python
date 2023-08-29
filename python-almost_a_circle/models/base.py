@@ -4,14 +4,12 @@
 
 
 class Base:
-    """_summary_
-    sdfsfsdfs
-    """
+    """Base class"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """_summary_
+        """Intialize a base
 
         Args:
             id (_type_, optional): _description_. Defaults to None.
