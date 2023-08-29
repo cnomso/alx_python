@@ -1,6 +1,4 @@
-"""
-
-"""
+""" The base model. """
 
 
 class Base:
