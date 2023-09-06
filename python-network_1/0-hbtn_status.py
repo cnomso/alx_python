@@ -1,4 +1,4 @@
-"""fetches
+"""fetches the details from
     https://alu-intranet.hbtn.io/status
 """
 
