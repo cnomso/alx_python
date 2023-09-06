@@ -9,6 +9,9 @@ import requests
     https://alu-intranet.hbtn.io/status
 """
 with requests.get("https://alu-intranet.hbtn.io/status") as response:
+    """fetches
+    https://alu-intranet.hbtn.io/status
+    """
     body = response.read()
     print("Body response:")
     print("\t- type: {}".format(type(body)))
