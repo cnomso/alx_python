@@ -3,7 +3,6 @@
 """
 
 
-import urllib.request
 import requests
 
 with requests.get("https://alu-intranet.hbtn.io/status") as response:
