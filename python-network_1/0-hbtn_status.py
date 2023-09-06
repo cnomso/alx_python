@@ -1,9 +1,14 @@
-import requests
-
+#!/usr/bin/python3
 """fetches the details from
     https://alu-intranet.hbtn.io/status
 """
 
+
+import requests
+
+"""fetches
+    https://alu-intranet.hbtn.io/status
+"""
 with requests.get("https://alu-intranet.hbtn.io/status") as response:
     """fetches
     https://alu-intranet.hbtn.io/status
