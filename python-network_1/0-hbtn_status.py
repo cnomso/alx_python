@@ -5,10 +5,9 @@
 
 
 import requests
-
-"""fetches
+    """fetches
     https://alu-intranet.hbtn.io/status
-"""
+    """
 with requests.get("https://alu-intranet.hbtn.io/status") as response:
     """fetches
     https://alu-intranet.hbtn.io/status
