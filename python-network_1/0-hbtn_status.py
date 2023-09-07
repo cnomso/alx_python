@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """fetches the details from
     https://alu-intranet.hbtn.io/status
 """
