@@ -1,18 +1,14 @@
-"""fetches the details from
-    https://alu-intranet.hbtn.io/status
 """
+Python script that fetches https://alu-intranet.hbtn.io/statu
+"""
+import urllib.request
 
 
-import requests
-    """fetches
-    https://alu-intranet.hbtn.io/status
-    """
-with requests.get("https://alu-intranet.hbtn.io/status") as response:
-    """fetches
-    https://alu-intranet.hbtn.io/status
-    """
-    body = response.read()
-    print("Body response:")
-    print("\t- type: {}".format(type(body)))
-    print("\t- content: {}".format(body))
-    print("\t- utf8 content: {}".format(body.decode("utf-8")))
+if __name__ == "__main__":
+    req = urllib.request.Request("https://alu-intranet.hbtn.io/status")
+    with urllib.request.urlopen(req) as res:
+        html = res.read()
+        print("Body response:")
+        print("\t- type: {}".format(type(html)))
+        print("\t- content: {}".format(html))
+        print("\t- utf8 content: {}".format(html.decode("utf-8")))
