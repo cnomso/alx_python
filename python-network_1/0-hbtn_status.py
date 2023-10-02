@@ -2,12 +2,11 @@
 Python script that fetches a URL
 """
 
-from urllib import request
+import requests
 
-if __name__ == "__main__":
-    with request.urlopen("https://alu-intranet.hbtn.io/status") as response:
-        response = response.read()
-        print("Body response:")
-        print("\t- type: {}".format(type(response)))
-        print("\t- content: {}".format(response))
-        print("\t- utf8 content: {}".format(response.decode(encoding="utf-8")))
+req = requests.get("https://alu-intranet.hbtn.io/status")
+
+print("Body response:")
+print("\t- type: {}".format(type(req)))
+print("\t- content: {}".format(req))
+# print("\t- utf8 content: {}".format(req.decode(encoding="utf-8")))
