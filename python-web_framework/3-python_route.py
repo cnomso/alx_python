@@ -1,3 +1,5 @@
+"""flask script that starts a Flask web application:
+"""
 from flask import Flask, escape
 
 app = Flask(__name__)

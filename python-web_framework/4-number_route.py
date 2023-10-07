@@ -16,9 +16,21 @@ def hbnb():
     return "HBNB"
 
 
+@app.route("/c/", defaults={"text": "is_cool"}, strict_slashes=False)
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
     return "C {}".format(escape(text).replace("_", " "))
+
+
+@app.route("/python/", defaults={"text": "is_cool"}, strict_slashes=False)
+@app.route("/python/<text>", strict_slashes=False)
+def python(text):
+    return "Python {}".format(escape(text).replace("_", " "))
+
+
+@app.route("/number/<int:n>", strict_slashes=False)
+def is_number(n):
+    return "{} is a number".format(n)
 
 
 if __name__ == "__main__":
