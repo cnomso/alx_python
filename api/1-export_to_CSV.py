@@ -1,6 +1,6 @@
-import requests
-import sys
 import csv
+import request
+import sys
 
 def get_employee_info(employee_id):
     # Get employee details
